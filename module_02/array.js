@@ -9,5 +9,6 @@ let name = ['Sajal', 'Borsa', 'Nayan', 'Apon'];
 // name.unshift('Shubro')   // adding new element in the zero index
 // name.shift();  // delete zero index element 
 
-name.splice(2, 0, 'Abhro')
+// name.splice(2, 0, 'Abhro') // add new element to the directed index no.
+// name.splice(starting index, delete count, 'adding desired element')
 console.log(name);
