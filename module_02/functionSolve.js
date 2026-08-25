@@ -17,6 +17,51 @@ function calculateDicountAmout (price, discountPercent) {
         return 0;
     }
     let discountAmount = (price * discountPercent) / 100;
-    return discountAmount;
+    return price - discountAmount;
 }
-console.log(calculateDicountAmout(200, 10))
+// console.log(calculateDicountAmout(200, 10))
+
+function calculateFinalBill (price, vatPercent = 15) {
+    let vat = (price * vatPercent) / 100;
+    return price + vat;
+}
+// console.log(calculateFinalBill(300))
+
+function convertBDT (amount){
+    return ` ${amount.toFixed(2)} BDT`
+}
+
+
+function capitalized (str){
+    if (!str) return "";
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+// console.log(capitalized('sajal'))
+
+function processOrder ( user, itemPrice, discountCode){
+    console.log(`--- Processing order for --- ${capitalized(user.name)}`);
+    if (!isValidEmail) {
+        console.log(`Error: Invalid user email.`)
+        return;
+    }
+    let currentPrice = itemPrice;
+
+    if (discountCode == 'SS') {
+        currentPrice = calculateDicountAmout(itemPrice, 10);
+        console.log('10% discount applied.')
+    }
+    else{
+        console.log('Error: Invalid discount code.');
+        return;
+    }
+
+    let totalBill = calculateFinalBill(currentPrice);
+    console.log('Final amount to pay:',convertBDT(totalBill));
+    console.log('Order completed successfully.')
+}
+
+let user1 = {
+    name: 'Sajal Mazumder',
+    email: 'sajal2@gmail.com'
+}
+processOrder(user1, 2000, "SB")
