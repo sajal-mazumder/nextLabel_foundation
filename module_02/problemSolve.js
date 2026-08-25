@@ -47,27 +47,78 @@
 
 // object problem solving
 
-let student = {
-    name: 'Sajal',
-    id: 202,
-    marks: {
-        bangla: 78,
-        english: 89,
-        math: 87
-    }
-}
+// let student = {
+//     name: 'Sajal',
+//     id: 202,
+//     marks: {
+//         bangla: 78,
+//         english: 89,
+//         math: 67
+//     }
+// }
 
-let totalMark = 0;
-let totalSbj = 0;
+// let totalMark = 0;
+// let totalSbj = 0;
 
-for( let mark in student.marks){
-    // console.log(mark);
-    // console.log(student.marks[mark]);
-    // console.log(mark); // print only keys
-    // console.log(student[mark]); // values
-    // console.log(Object.entries(student)[0]);
-    totalMark += student.marks[mark];
-    totalSbj++;
-}
+// for( let mark in student.marks){
+//     // console.log(mark);
+//     // console.log(student.marks[mark]);
+//     // console.log(mark); // print only keys
+//     // console.log(student[mark]); // values
+//     // console.log(Object.entries(student)[0]);
+//     totalMark += student.marks[mark];
+//     totalSbj++;
+// }
 // console.log(totalMark, totalSbj);
-console.log((totalMark / totalSbj).toFixed(3)); // average
+// let average = (totalMark / totalSbj).toFixed(3);
+// console.log(average);
+
+// // checking A+ or not
+// if (average >= 80) {
+//     console.log('Congratulations: You got A+.')
+// }else{
+//     console.log('You are under A+.')
+// }
+
+
+// task 
+
+let cart = [
+    {
+        name: 'shirt',
+        price: 1200,
+        quantity: 2
+    },
+    {
+        name: 'pant',
+        price: 1000,
+        quantity: 4
+    },
+    {
+        name: 'shoes',
+        price: 1200,
+        quantity: 1
+    },
+]
+
+let totalItemBuyed = 0;
+let totalBill = 0;
+
+for( let i = 0; i < cart.length; i++){
+    // console.log(cart[i]);
+    totalItemBuyed = totalItemBuyed + cart[i].quantity;
+    totalBill = totalBill + cart[i].price * cart[i].quantity;
+}
+console.log(totalItemBuyed, totalBill);
+
+
+function bill(arr) {
+    let totalBill = 0;
+    let totalItemBuyed = 0;
+    for( let product of arr){
+        totalBill += product.price * product.quantity;
+        totalItemBuyed += product.quantity;
+    }
+    return{totalBill, totalItemBuyed}
+}
+console.log(bill(cart));

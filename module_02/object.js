@@ -38,5 +38,5 @@ let arr = ['sajal', 'ramesh',['abhro', 'shubro'],{
         manager: ['rahim','karim','babul']
     }
 }];
-arr[3].showroom.manager[0] = 'akter'  // update data
-console.log(arr[3].showroom.manager[0]);
+arr[3].showroom.manager[1] = 'akter'  // update data
+console.log(arr[3].showroom.manager[1]);
