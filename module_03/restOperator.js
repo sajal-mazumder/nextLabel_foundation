@@ -31,4 +31,21 @@ let obj2 = {
 
 // let {instution,...remain} = obj2;
 let {instution: {school, ...remain}} = obj2 // by destructuring object.
-console.log(remain);
+// console.log(remain); 
+
+// array rest operation
+
+let arr = [ 2, 4, ['sajal','borsa'], {a: 5, b: 9}];
+// let [ fr, ...remainss] = arr;
+// console.log(remainss);
+
+let [
+    fr,
+    second,
+    [name, ...remainingNames],
+    obj
+] = arr;
+console.log(remainingNames);
+let [fre, snd, nstdarr, {a, ...rem}] = arr // print only b: 9
+
+console.log(rem);
