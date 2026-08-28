@@ -45,7 +45,7 @@ let [
     [name, ...remainingNames],
     obj
 ] = arr;
-console.log(remainingNames);
+console.log(remainingNames); // print only borsa
 let [fre, snd, nstdarr, {a, ...rem}] = arr // print only b: 9
 
 console.log(rem);
