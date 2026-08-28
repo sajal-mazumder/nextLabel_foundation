@@ -1,0 +1,21 @@
+// console.log(33);
+
+// export method can export a function or variable to another file 
+
+export function add (a, b){
+    return a +b;
+}
+
+function sub (a, b){
+    if ( a > b) {
+        return a - b;
+    }else{
+        return b - a;
+    }
+}
+
+export default sub;
+
+export let myName = 'Sajal';
+
+// these function and variable can be access from import file
