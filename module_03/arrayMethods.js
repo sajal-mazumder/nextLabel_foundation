@@ -74,4 +74,4 @@ let product = [
 let sortedItem = product.filter((p) => p.instock === true).reduce((acc, currednt) => {
     return acc += currednt.price;
 }, 0);
-console.log(`Total bill of sorted item ${sortedItem}`);
+console.log(`Total bill of sorted item ${sortedItem}`); 
