@@ -39,11 +39,11 @@
 
 // more array methods
 
-// let product = [
-//     {title: 'Laptop', price: 12000, model: 'hp elite BXC540', instock: 'yes'},
-//     {title: 'Desktop', price: 10200, model: 'risen macbook', instock: 'yes'},
-//     {title: 'keyboard', price: 200, model: 'A4 tech N45', instock: 'no'}
-// ]
+let product = [
+    {title: 'Laptop', price: 12000, model: 'hp elite BXC540', instock: 'yes'},
+    {title: 'Desktop', price: 10200, model: 'risen macbook', instock: 'yes'},
+    {title: 'keyboard', price: 200, model: 'A4 tech N45', instock: 'no'}
+]
 // for( let i = 0; i < product.length; i++){
 //     // console.log(product[i]); 
 //     // console.log(product[i].price) // returns only price
@@ -57,9 +57,15 @@
 
 // sort method
 
-let numArr = [ 2, 6, 4, 63, 67, 53, 1, 45];
-let sorted = numArr.sort(); // default sorting accending : lower to topper
-let sortAccend = numArr.sort((a, b) => a - b); // accending method
-let sortDecend = numArr.sort((a, b) => b - a); // decending method : topper to lower
-console.log(sorted, '\n', sortAccend, '\n', sortDecend);
-   
+// let numArr = [ 2, 6, 4, 63, 67, 53, 1, 45];
+// // applying in numerical array
+// let sorted = numArr.sort(); // default sorting accending : lower to topper
+// let sortAccend = numArr.sort((a, b) => a - b); // accending method
+// let sortDecend = numArr.sort((a, b) => b - a); // decending method : topper to lower
+// console.log(sorted, '\n', sortAccend, '\n', sortDecend);
+
+// using in an array that contains multi object 
+
+let accendSort = product.sort((a, b) => a.price - b.price); // lower price to topper price
+let deccendSort = product.sort((a, b) => b.price - a.price);
+console.log(accendSort, '\n', deccendSort);
