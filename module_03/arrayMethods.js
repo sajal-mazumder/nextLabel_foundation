@@ -71,7 +71,7 @@ let product = [
 // console.log(accendSort, '\n', deccendSort); 
 
 // sorting using reduce and filter method based on inStock and than calculate total bill of sortec item.
-let sortedItem = product.filter((p) => p.instock === true).reduce((acc, currednt) => {
-    return acc += currednt.price;
+let sortedItem = product.filter((p) => p.instock === true).reduce((acc, current) => {
+    return acc += current.price;
 }, 0);
 console.log(`Total bill of sorted item ${sortedItem}`); 
