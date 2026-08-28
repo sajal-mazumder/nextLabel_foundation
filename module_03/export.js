@@ -2,11 +2,11 @@
 
 // export method can export a function or variable to another file 
 
-export function add (a, b){
+export function add (a, b){ // naming export
     return a +b;
 }
 
-function sub (a, b){
+function sub (a, b){  // default export
     if ( a > b) {
         return a - b;
     }else{
