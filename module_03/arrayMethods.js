@@ -40,9 +40,9 @@
 // more array methods
 
 let product = [
-    {title: 'Laptop', price: 12000, model: 'hp elite BXC540', instock: 'yes'},
-    {title: 'Desktop', price: 10200, model: 'risen macbook', instock: 'yes'},
-    {title: 'keyboard', price: 200, model: 'A4 tech N45', instock: 'no'}
+    {title: 'Laptop', price: 12000, model: 'hp elite BXC540', instock:  true},
+    {title: 'Desktop', price: 10200, model: 'risen macbook', instock: false },
+    {title: 'keyboard', price: 200, model: 'A4 tech N45', instock: true}
 ]
 // for( let i = 0; i < product.length; i++){
 //     // console.log(product[i]); 
@@ -66,6 +66,12 @@ let product = [
 
 // using in an array that contains multi object 
 
-let accendSort = product.sort((a, b) => a.price - b.price); // lower price to topper price
-let deccendSort = product.sort((a, b) => b.price - a.price);
-console.log(accendSort, '\n', deccendSort);
+// let accendSort = product.sort((a, b) => a.price - b.price); // lower price to topper price
+// let deccendSort = product.sort((a, b) => b.price - a.price);  // topper price to lower price
+// console.log(accendSort, '\n', deccendSort); 
+
+// sorting using reduce and filter method based on inStock and than calculate total bill of sortec item.
+let sortedItem = product.filter((p) => p.instock === true).reduce((acc, currednt) => {
+    return acc += currednt.price;
+}, 0);
+console.log(`Total bill of sorted item ${sortedItem}`);
