@@ -23,25 +23,57 @@
 // })
 
 // this function can write as arrow function
+
 // myBtn.addEventListener('click', () =>{ // arrow function
 //     // console.log('mouse clicked', taskInput.value); // it is also working
 //     let li = document.createElement('li');
 //     li.textContent = taskInput.value;
 //     taskList.appendChild(li);
 //     // console.log(li);
+
+//     let span = document.createElement('span');
+//     span.textContent = taskInput.value;
+//     // console.log(span);
+
+//     let btnWraper = document.createElement('div');
+//     // console.log(btnWraper);
+
+//     let completeBtn = document.createElement('button');
+//     completeBtn.textContent = '✅';
+//     // console.log(completeBtn);
+
+//     let deleteBtn = document.createElement('button');
+//     deleteBtn.textContent = '❌';
+//     // console.log(deleteBtn);
+
+//     li.appendChild(span);
+//     li.appendChild(btnWraper);
+
+//     btnWraper.appendChild(completeBtn);
+//     btnWraper.appendChild(deleteBtn);
+
+//     taskInput.value = '';
 // })
 
-// refres.addEventListener('click', () =>{
-// //     console.log('refreshed', taskInput.value);
+// // refres.addEventListener('click', () =>{
+// // //     console.log('refreshed', taskInput.value);
     
-// })
+// // })
 
-// press enter button not mouse click
+// // press enter button not mouse click
+
 // taskInput.addEventListener('keydown', (event) => {
 //     if (event.key === 'Enter') {
-//         console.log('Input entered', taskInput.value);
+//         // console.log('Input entered', taskInput.value);
+//         let li = document.createElement('li');
+//         li.textContent = taskInput.value;
+//         taskList.appendChild(li);
+//         taskInput.value = '';
 //     }
 // })
+
+
+
 
 // creating new tag element
 
@@ -49,4 +81,4 @@
 // li.textContent = 'Learn JS';
 // taskList.appendChild(li);
 // console.log(li);
-console.log('sajal')
+
