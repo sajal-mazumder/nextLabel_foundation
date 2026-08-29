@@ -4,17 +4,16 @@
 }
 
 #btnDiv{
-    width: 500px;
-    height: 300px;
     margin: auto;
-    border: 1px solid red;
-    
+    background-color: aqua;
+    width: 400px;
+    /* height: 250px; */
 }
 
 #myBtn{
     width: 80px;
     height: 40px;
-    margin: 120px 200px;
+    
 }
 
 #taskList{
