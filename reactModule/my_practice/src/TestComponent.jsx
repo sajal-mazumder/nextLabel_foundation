@@ -6,66 +6,48 @@
 
 //  export system 1:
 
-// const TestComponent = () => {
-//     return <h1>Test Component First React code. Date : 05/ 08/ 2026.</h1>
+// let TestComponent = () =>{
+//     return <h1>hello guys.</h1>
 // }
-// export default  TestComponent;
 
-// export system 2:
+// export default TestComponent;
 
-// export const TestComponent = () => {
-//     return <h2>Test component First React code.</h2>
-// }
+// export system 2
+
+export  let  Tests = () => {
+    return <h2>Hello Friends.</h2>
+}
+
 
 
 // system 3:
 
-// export default function TestComponent(){
-//     return <h1>test component</h1> <h2>I am sajal</h2> // pasapashi duita tag eivabe lekha jabena.
+// export default function Test(){
+//     return <h1>hello brothers.</h1>
 // }
 
-// let myName = 'Sajal'
-
-// export default function TestComponent(){
-//     // return (
-//     //     <div>
-//     //         <h1>My first component.</h1>
-//     //         <span>Hi, I am Sajal. A new web developer.</span>
-//     //     </div>
-
-//     // )
-    
-//     // jokhon amra multiple div wrap na kore single root hisebe export korte chai tokhon react fragment <> </> use kore multiple div export korte pari.
-
-//     return (
-//         <>
-//         <div>
-//             <h2>My first React code.</h2>
-//             <span>Hello, I am {myName}.</span>  // dynamically variable render 
-//         </div>
-//         <div>
-//             <h2>My Experiences.</h2>
-//             <ul>
-//                 <li>Html</li>
-//                 <li>Css</li>
-//                 <li>JavaScript</li>
-//                 <li>Tailwind css</li>
-//                 <li>React</li>
-//             </ul>
-//         </div>
-//         </>
-//     )
+// function Testy(){
+//     return <h2>Testy treat.</h2>
 // }
+// export default Testy;
 
 
-// export default function TestComponent (){
-//     return(
-//         <>
-//         <div>
-//             <p></p>
-//             <p></p>
-//             <p></p>
-//         </div>
-//         </>
-//     );
-// }
+// jokhon amra multiple div wrap na kore single root hisebe export korte chai tokhon react fragment <> </> use kore multiple div export korte pari.
+
+function FullTest(){
+    return(
+        <>
+        <div>Fulltes texts.</div>
+        <div>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+        </div>
+        </>
+    )
+}
+export default FullTest;
+
+
