@@ -1,5 +1,28 @@
 
 
 .style{
-    background-color: aquamarine;
+    background-color: rgba(74, 2, 57, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.style2{
+    background-color: rgba(90, 70, 109, 0.803);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btnStyle{
+    background-color: rgb(125, 112, 95);
+    margin: 0 10px 0 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
 }

@@ -1,8 +1,10 @@
 // ! 1. component must contain .jsx extention
 // ! 2. component name must starts with Capital letter.
 
+// import './style.css'
+
 // const TestComponent = () => {
-//     // return <h1 className="style">Test component. </h1> // single line 
+    // return <h1 className="style">Test component. </h1> // single line 
 
 //     return(  // multiple line return and multi div using fragment <> </>
 //         <>
@@ -51,9 +53,6 @@ export const TestComponent2 = () =>{
 
 // props and children
 
-// let nameing = 'sajal mazumder';
-// let ageing = 34;
-
 // export function NameingCard(props){
 //     // console.log(props);
 //     return(
@@ -69,16 +68,19 @@ export const TestComponent2 = () =>{
 // NameingCard('Sajal mazumder');
 
 
+// rendering children
 
-export function NameingCard({name, age, isMarried, hasJob, children}){
+export function NameingCard({name, age, isMarried, hasJob}){
     // console.log(name, age, isMarried, hasJob);
     return(
         <>
-        {children}
-        <p>Name: {name}</p>
-        <p>Age: {age}</p>
-        <p>IsMarried: {isMarried}</p>
-        <p>HasJob: {hasJob}</p>
+        <div className="style">
+            <p>Name: {name}</p>
+            <p>Age: {age}</p>
+            <p>IsMarried: {isMarried}</p>
+            <p>HasJob: {hasJob}</p>
+            {/* {children} */}
+        </div>
         </>
     )
     
