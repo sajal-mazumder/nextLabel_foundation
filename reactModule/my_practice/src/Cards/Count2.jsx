@@ -1,13 +1,15 @@
 
 
 // import { useState } from 'react'
+import {use} from 'react'
+import { CounterContext } from '../Providers/Counter.Provider'
 import '../style.css'
 
 
-function Count2({counting, setCounting}){
+function Count2(){
     // console.log('count')
     // const [counting, setCounting] = useState('');
-    
+     const {counting, setCounting} = use(CounterContext)
 
     const counter = () => {
         setCounting(counting + 1)
