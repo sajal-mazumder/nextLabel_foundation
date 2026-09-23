@@ -1,11 +1,15 @@
 import '../style.css'
+import NestedDisplay from './NestedDisplay';
 
 function Display({counting}){
-    console.log('display')
+    // console.log('display')
     return (
         <>
-        <div>
-           {counting} 
+        <h3>Children</h3>
+        <div className='style2'>
+           {/* {counting} */}
+           {/* {setCounting} // no need */}
+        <NestedDisplay counting={counting}/>
         </div>
         </>
     )
